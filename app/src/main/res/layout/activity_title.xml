@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="socially"
+        android:textSize="85sp"
+        android:textColor="@color/brown"
+        android:fontFamily="@font/GoldenVarsityOutline"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from"
+        android:text="from"
+        android:layout_below="@id/title"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="179dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SMD"
+        android:layout_marginTop="635dp"
+        android:text="SMD"
+        android:textSize="50dp"
+        android:textColor="@color/brownRed"
+        android:layout_marginLeft="150dp"/>
+
+
+</RelativeLayout>

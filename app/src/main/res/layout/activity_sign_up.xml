@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brownRed"
+    tools:context=".SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/CoolveticaRgIt"
+            android:text="socially"
+            android:textColor="@color/white"
+            android:textSize="70dp" />
+
+        <!-- SUBTITLE -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Create An Account and Sign Up"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/usernameHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subtitle"
+            android:layout_marginVertical="120dp"
+            android:layout_marginLeft="40dp"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/usernameForm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameHeading"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="-120dp"
+            android:alpha="0.7"
+            android:backgroundTint="@color/white"
+            android:hint="Enter username"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Your Full Name -->
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameForm"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Your Full Name"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fullNameForm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullName"
+            android:layout_marginLeft="36dp"
+            android:alpha="0.7"
+            android:backgroundTint="@color/white"
+            android:hint="Enter full name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Your DOB -->
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullNameForm"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Date of Birth"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/dobForm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob"
+            android:layout_marginLeft="36dp"
+            android:alpha="0.7"
+            android:backgroundTint="@color/white"
+            android:hint="Enter date of birth"
+            android:inputType="date"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Your Email -->
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dobForm"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="E-mail"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailForm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="36dp"
+            android:alpha="0.7"
+            android:backgroundTint="@color/white"
+            android:hint="Enter E-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Your Password -->
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailForm"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/passwordForm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="36dp"
+            android:alpha="0.7"
+            android:backgroundTint="@color/white"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordForm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Create an Account"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:alpha="0.4"
+            android:backgroundTint="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>
