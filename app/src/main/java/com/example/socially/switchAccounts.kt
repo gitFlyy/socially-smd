@@ -3,20 +3,17 @@ package com.example.socially
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class signUp : AppCompatActivity() {
+class switchAccounts : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_switch_accounts)
 
-        val signUpButton = findViewById<Button>(R.id.createAcc)
+        val signUpButton = findViewById<Button>(R.id.signup)
 
         signUpButton.setOnClickListener {
-            val intent = Intent(this, switchAccounts::class.java)
+            val intent = Intent(this, signUp::class.java)
             startActivity(intent)
         }
     }
