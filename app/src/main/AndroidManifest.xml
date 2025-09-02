@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Socially">
         <activity
-            android:name=".SignUp"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".TitleActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".signUp"/>
+        <activity android:name=".Login" />
+        <activity android:name=".switchAccounts" />
     </application>
 
 </manifest>
