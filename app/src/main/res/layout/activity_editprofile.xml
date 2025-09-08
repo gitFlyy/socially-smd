@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Edit Profile"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Done"
+            android:textSize="16sp"
+            android:textColor="@color/brownRed"
+            android:textStyle="bold"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+    </RelativeLayout>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp">
+
+        <!-- Profile Photo Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/profile_picture_edit"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ball_big_orange"
+                android:background="@drawable/circle_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_picture_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Change Profile Photo"
+                android:textSize="16sp"
+                android:textColor="@color/brownRed"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp" />
+
+        </RelativeLayout>
+
+        <!-- Name Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Name"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/name_label"
+                android:layout_marginStart="16dp"
+                android:text="Jacob West"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@android:color/transparent"
+                android:paddingVertical="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/name_input"
+                android:layout_toEndOf="@id/name_label"
+                android:layout_marginStart="16dp"
+                android:background="#E0E0E0" />
+
+        </RelativeLayout>
+
+        <!-- Username Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/username_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/username_label"
+                android:layout_marginStart="16dp"
+                android:text="jacob_w"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@android:color/transparent"
+                android:paddingVertical="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/username_input"
+                android:layout_toEndOf="@id/username_label"
+                android:layout_marginStart="16dp"
+                android:background="#E0E0E0" />
+
+        </RelativeLayout>
+
+        <!-- Website Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/website_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Website"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/website_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/website_label"
+                android:layout_marginStart="16dp"
+                android:hint="Website"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textColorHint="#999999"
+                android:background="@android:color/transparent"
+                android:paddingVertical="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/website_input"
+                android:layout_toEndOf="@id/website_label"
+                android:layout_marginStart="16dp"
+                android:background="#E0E0E0" />
+
+        </RelativeLayout>
+
+        <!-- Bio Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/bio_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:text="Bio"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/bio_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_toEndOf="@id/bio_label"
+                android:layout_marginStart="16dp"
+                android:text="Digital goodies designer @pixsellz\nEverything is designed."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:paddingVertical="8dp"
+                android:inputType="textMultiLine"
+                android:maxLines="2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bio_input"
+                android:layout_toEndOf="@id/bio_label"
+                android:layout_marginStart="16dp"
+                android:background="#E0E0E0" />
+
+        </RelativeLayout>
+
+        <!-- Switch to Professional Account -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Switch to Professional Account"
+            android:textSize="16sp"
+            android:textColor="@color/brownRed"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+        <!-- Private Information Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Private Information"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!-- Email Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/email_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/email_label"
+                android:layout_marginStart="16dp"
+                android:text="jacob.west@gmail.com"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@android:color/transparent"
+                android:paddingVertical="8dp"
+                android:inputType="textEmailAddress" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/email_input"
+                android:layout_toEndOf="@id/email_label"
+                android:layout_marginStart="16dp"
+                android:background="#E0E0E0" />
+
+        </RelativeLayout>
+
+        <!-- Phone Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/phone_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Phone"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/phone_label"
+                android:layout_marginStart="16dp"
+                android:text="+1 202 555 0147"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@android:color/transparent"
+                android:paddingVertical="8dp"
+                android:inputType="phone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/phone_input"
+                android:layout_toEndOf="@id/phone_label"
+                android:layout_marginStart="16dp"
+                android:background="#E0E0E0" />
+
+        </RelativeLayout>
+
+        <!-- Gender Field -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gender_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/gender_value"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/gender_label"
+                android:layout_marginStart="16dp"
+                android:text="Male"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingVertical="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/gender_value"
+                android:layout_toEndOf="@id/gender_label"
+                android:layout_marginStart="16dp"
+                android:background="#E0E0E0" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
