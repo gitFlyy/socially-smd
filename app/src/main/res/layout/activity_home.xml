@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <!-- Top Header Bar -->
     <RelativeLayout
         android:id="@+id/header_bar"
         android:layout_width="match_parent"
@@ -14,7 +13,7 @@
         android:paddingHorizontal="16dp">
 
         <ImageView
-            android:id="@+id/camera_icon"
+            android:id="@+id/cameraIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_centerVertical="true"
@@ -38,21 +37,20 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/notifications_icon"
+                android:id="@+id/notificationsIcon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/ic_noti" />
 
             <ImageView
-                android:id="@+id/share_icon"
+                android:id="@+id/headerShareIcon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_share" />
         </LinearLayout>
     </RelativeLayout>
 
-    <!-- Stories Section -->
     <LinearLayout
         android:id="@+id/stories_section"
         android:layout_width="match_parent"
@@ -70,6 +68,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/yourStoryAvatar"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/ball_big_orange" />
@@ -91,6 +90,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/karenneStoryAvatar"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/ball_big_purple" />
@@ -112,6 +112,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/zackjohnStoryAvatar"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/ball_big_orange" />
@@ -133,6 +134,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/kieronStoryAvatar"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/ball_big_purple" />
@@ -153,6 +155,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/craigStoryAvatar"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/ball_big_orange" />
@@ -167,7 +170,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Post Section -->
     <LinearLayout
         android:id="@+id/post_section"
         android:layout_width="match_parent"
@@ -176,14 +178,13 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <!-- Post Header -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp">
 
             <ImageView
-                android:id="@+id/user_avatar"
+                android:id="@+id/postUserAvatar"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerVertical="true"
@@ -194,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="12dp"
-                android:layout_toEndOf="@id/user_avatar"
+                android:layout_toEndOf="@id/postUserAvatar"
                 android:orientation="vertical">
 
                 <TextView
@@ -214,6 +215,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/postMenuIcon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_alignParentEnd="true"
@@ -221,15 +223,13 @@
                 android:src="@drawable/ic_menu" />
         </RelativeLayout>
 
-        <!-- Post Image -->
         <ImageView
-            android:id="@+id/post_image"
+            android:id="@+id/postImage"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:scaleType="centerCrop"
             android:src="@drawable/tokyo" />
 
-        <!-- Post Actions -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -243,28 +243,28 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/like_button"
+                    android:id="@+id/likeButton"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_heart_outline" />
 
                 <ImageView
-                    android:id="@+id/comment_button"
+                    android:id="@+id/commentButton"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_comment" />
 
                 <ImageView
-                    android:id="@+id/share_button"
+                    android:id="@+id/postShareButton"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_share" />
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/bookmark_button"
+                android:id="@+id/bookmarkButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_alignParentEnd="true"
@@ -272,7 +272,6 @@
                 android:src="@drawable/ic_bookmark_outline" />
         </RelativeLayout>
 
-        <!-- Likes Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -280,6 +279,7 @@
             android:paddingHorizontal="12dp">
 
             <ImageView
+                android:id="@+id/likedByAvatar"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginEnd="8dp"
@@ -316,7 +316,6 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <!-- Caption -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -342,7 +341,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Bottom Navigation -->
     <LinearLayout
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -360,6 +358,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/homeButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_home_filled"/>
@@ -373,6 +372,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/searchButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_search" />
@@ -386,6 +386,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/addButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_add" />
@@ -399,6 +400,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/favoritesButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_heart_outline" />
@@ -412,6 +414,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/profileButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ball_big_purple" />

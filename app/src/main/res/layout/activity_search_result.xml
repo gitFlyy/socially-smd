@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <!-- Status Bar Space -->
     <View
         android:id="@+id/status_bar_space"
         android:layout_width="match_parent"
@@ -13,7 +12,6 @@
         android:layout_alignParentTop="true"
         android:background="@color/white" />
 
-    <!-- Search Header -->
     <RelativeLayout
         android:id="@+id/search_header"
         android:layout_width="match_parent"
@@ -22,7 +20,6 @@
         android:background="@color/white"
         android:paddingHorizontal="16dp">
 
-        <!-- Back Button -->
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="24dp"
@@ -33,7 +30,6 @@
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:padding="4dp" />
 
-        <!-- Search Bar -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -48,6 +44,7 @@
             android:paddingHorizontal="12dp">
 
             <ImageView
+                android:id="@+id/searchBarIcon"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_marginEnd="8dp"
@@ -63,13 +60,13 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/clearTextIcon"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:src="@drawable/ic_close"
                 app:tint="@color/black" />
         </LinearLayout>
 
-        <!-- Clear Button -->
         <TextView
             android:id="@+id/clear_button"
             android:layout_width="wrap_content"
@@ -83,7 +80,6 @@
             android:padding="8dp" />
     </RelativeLayout>
 
-    <!-- Tab Section -->
     <LinearLayout
         android:id="@+id/tab_section"
         android:layout_width="match_parent"
@@ -92,7 +88,6 @@
         android:background="@color/white"
         android:orientation="horizontal">
 
-        <!-- Top Tab -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -116,7 +111,6 @@
                 android:background="@color/black" />
         </LinearLayout>
 
-        <!-- Accounts Tab -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -133,7 +127,6 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <!-- Tags Tab -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -150,7 +143,6 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <!-- Places Tab -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -168,7 +160,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Divider -->
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
@@ -176,7 +167,6 @@
         android:layout_below="@id/tab_section"
         android:background="@color/grey" />
 
-    <!-- Search Results List -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -185,7 +175,6 @@
         android:paddingHorizontal="16dp"
         android:paddingTop="8dp">
 
-        <!-- Account Result -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -195,13 +184,13 @@
             android:background="?android:attr/selectableItemBackground"
             android:paddingVertical="8dp">
 
-            <!-- Profile Image -->
             <RelativeLayout
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="12dp">
 
                 <ImageView
+                    android:id="@+id/accountResultAvatar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/ball_big_purple"
@@ -217,7 +206,6 @@
                     android:textStyle="bold" />
             </RelativeLayout>
 
-            <!-- Account Info -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -241,7 +229,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Hashtag Result 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -251,13 +238,13 @@
             android:background="?android:attr/selectableItemBackground"
             android:paddingVertical="8dp">
 
-            <!-- Hashtag Icon -->
             <RelativeLayout
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="12dp">
 
                 <ImageView
+                    android:id="@+id/hashtagResult1Avatar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/ball_big_orange"
@@ -273,7 +260,6 @@
                     android:textStyle="bold" />
             </RelativeLayout>
 
-            <!-- Hashtag Info -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -297,7 +283,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Hashtag Result 2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -307,13 +292,13 @@
             android:background="?android:attr/selectableItemBackground"
             android:paddingVertical="8dp">
 
-            <!-- Hashtag Icon -->
             <RelativeLayout
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="12dp">
 
                 <ImageView
+                    android:id="@+id/hashtagResult2Avatar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/ball_big_purple"
@@ -329,7 +314,6 @@
                     android:textStyle="bold" />
             </RelativeLayout>
 
-            <!-- Hashtag Info -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -353,7 +337,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Location Result -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -363,13 +346,13 @@
             android:background="?android:attr/selectableItemBackground"
             android:paddingVertical="8dp">
 
-            <!-- Location Icon -->
             <RelativeLayout
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="12dp">
 
                 <ImageView
+                    android:id="@+id/locationResultAvatar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/ball_big_orange"
@@ -385,7 +368,6 @@
                     android:textStyle="bold" />
             </RelativeLayout>
 
-            <!-- Location Info -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -409,7 +391,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Hashtag Result 3 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -419,13 +400,13 @@
             android:background="?android:attr/selectableItemBackground"
             android:paddingVertical="8dp">
 
-            <!-- Hashtag Icon -->
             <RelativeLayout
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="12dp">
 
                 <ImageView
+                    android:id="@+id/hashtagResult3Avatar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/ball_big_purple"
@@ -441,7 +422,6 @@
                     android:textStyle="bold" />
             </RelativeLayout>
 
-            <!-- Hashtag Info -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -465,7 +445,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Hashtag Result 4 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -475,13 +454,13 @@
             android:background="?android:attr/selectableItemBackground"
             android:paddingVertical="8dp">
 
-            <!-- Hashtag Icon -->
             <RelativeLayout
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="12dp">
 
                 <ImageView
+                    android:id="@+id/hashtagResult4Avatar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/ball_big_orange"
@@ -497,7 +476,6 @@
                     android:textStyle="bold" />
             </RelativeLayout>
 
-            <!-- Hashtag Info -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
