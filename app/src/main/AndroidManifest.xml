@@ -23,6 +23,11 @@
         <activity android:name=".signUp"/>
         <activity android:name=".Login" />
         <activity android:name=".switchAccounts" />
+        <activity android:name=".home"/>
+        <activity android:name=".search"/>
+        <activity android:name=".notifications"/>
+        <activity android:name=".searchResult"/>
+        <activity android:name=".you"/>
     </application>
 
 </manifest>

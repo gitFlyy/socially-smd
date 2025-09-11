@@ -11,9 +11,15 @@ class switchAccounts : AppCompatActivity() {
         setContentView(R.layout.activity_switch_accounts)
 
         val signUpButton = findViewById<Button>(R.id.signup)
+        val logInButton = findViewById<Button>(R.id.LoginButton)
 
         signUpButton.setOnClickListener {
             val intent = Intent(this, signUp::class.java)
+            startActivity(intent)
+        }
+
+        logInButton.setOnClickListener {
+            val intent = Intent(this, home::class.java)
             startActivity(intent)
         }
     }
