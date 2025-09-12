@@ -29,6 +29,12 @@ class home : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val cameraButton = findViewById<ImageView>(R.id.addButton)
+        cameraButton.setOnClickListener {
+            val intent = Intent(this, camera::class.java)
+            startActivity(intent)
+        }
+
         val headerShareButton = findViewById<ImageView>(R.id.headerShareIcon)
         headerShareButton.setOnClickListener {
             val intent = Intent(this, directMessages::class.java)
@@ -37,31 +43,31 @@ class home : AppCompatActivity() {
 
         val storyButton1 = findViewById<ImageView>(R.id.karenneStoryAvatar)
         storyButton1.setOnClickListener {
-            val intent = Intent(this, directMessages::story.java)
+            val intent = Intent(this, story::class.java)
             startActivity(intent)
         }
 
         val storyButton2 = findViewById<ImageView>(R.id.zackjohnStoryAvatar)
         storyButton2.setOnClickListener {
-            val intent = Intent(this, directMessages::story.java)
+            val intent = Intent(this, story::class.java)
             startActivity(intent)
         }
 
         val storyButton3 = findViewById<ImageView>(R.id.kieronStoryAvatar)
         storyButton3.setOnClickListener {
-            val intent = Intent(this, directMessages::story.java)
+            val intent = Intent(this, story::class.java)
             startActivity(intent)
         }
 
         val storyButton4 = findViewById<ImageView>(R.id.craigStoryAvatar)
         storyButton4.setOnClickListener {
-            val intent = Intent(this, directMessages::story.java)
+            val intent = Intent(this, story::class.java)
             startActivity(intent)
         }
 
         val postAvatar = findViewById<ImageView>(R.id.postUserAvatar)
         postAvatar.setOnClickListener {
-            val intent = Intent(this, profile::story.java)
+            val intent = Intent(this, profile::class.java)
             startActivity(intent)
         }
 

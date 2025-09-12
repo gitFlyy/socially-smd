@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="#000000">
 
-    <!-- Full screen story image -->
     <ImageView
         android:id="@+id/story_image"
         android:layout_width="match_parent"
@@ -13,14 +12,12 @@
         android:src="@drawable/search5"
         android:scaleType="centerCrop" />
 
-    <!-- Top overlay with gradient -->
     <View
         android:id="@+id/top_gradient"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:background="@drawable/blackgraygradient" />
 
-    <!-- Story progress bar -->
     <View
         android:id="@+id/story_progress"
         android:layout_width="match_parent"
@@ -31,7 +28,6 @@
         android:alpha="0.5"
         android:background="@drawable/separator" />
 
-    <!-- Header with profile info -->
     <RelativeLayout
         android:id="@+id/story_header"
         android:layout_width="match_parent"
@@ -95,7 +91,6 @@
 
     </RelativeLayout>
 
-    <!-- Bottom gradient overlay -->
     <View
         android:id="@+id/bottom_gradient"
         android:layout_width="match_parent"
@@ -103,7 +98,6 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/blackgraygradient" />
 
-    <!-- Bottom action buttons -->
     <LinearLayout
         android:id="@+id/bottom_actions"
         android:layout_width="match_parent"

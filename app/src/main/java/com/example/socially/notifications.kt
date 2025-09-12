@@ -23,6 +23,12 @@ class notifications : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val cameraButton = findViewById<ImageView>(R.id.nav_add)
+        cameraButton.setOnClickListener {
+            val intent = Intent(this, camera::class.java)
+            startActivity(intent)
+        }
+
         val profileButton = findViewById<ImageView>(R.id.nav_profile)
         profileButton.setOnClickListener {
             val intent = Intent(this, profile::class.java)

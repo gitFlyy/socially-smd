@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <!-- Status Bar Space -->
     <View
         android:id="@+id/status_bar_space"
         android:layout_width="match_parent"
@@ -13,7 +12,6 @@
         android:layout_alignParentTop="true"
         android:background="@color/lightGrey" />
 
-    <!-- Chat Header -->
     <RelativeLayout
         android:id="@+id/chat_header"
         android:layout_width="match_parent"
@@ -23,7 +21,6 @@
         android:elevation="2dp"
         android:paddingHorizontal="16dp">
 
-        <!-- Back Button -->
         <ImageView
             android:id="@+id/back_button"
             android:layout_width="24dp"
@@ -34,7 +31,6 @@
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:padding="4dp" />
 
-        <!-- Profile Info -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +43,6 @@
             android:background="?android:attr/selectableItemBackground"
             android:paddingVertical="8dp">
 
-            <!-- Profile Picture -->
             <RelativeLayout
                 android:layout_width="36dp"
                 android:layout_height="36dp"
@@ -69,17 +64,15 @@
                     android:textStyle="bold" />
             </RelativeLayout>
 
-            <!-- Username -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="internshala"
+                android:text="joshua_I"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <!-- Action Buttons -->
         <LinearLayout
             android:id="@+id/action_buttons"
             android:layout_width="wrap_content"
@@ -109,7 +102,6 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <!-- Chat Messages Area -->
     <RelativeLayout
         android:id="@+id/messages_area"
         android:layout_width="match_parent"
@@ -117,7 +109,6 @@
         android:layout_below="@id/chat_header"
         android:layout_above="@id/message_input_section">
 
-        <!-- Timestamp -->
         <TextView
             android:id="@+id/timestamp"
             android:layout_width="wrap_content"
@@ -130,10 +121,9 @@
             android:alpha="0.7"
             android:textSize="12sp" />
 
-        <!-- Hello Message -->
         <LinearLayout
             android:id="@+id/hello_message"
-            android:layout_width="70dp"
+            android:layout_width="180dp"
             android:layout_height="50dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
@@ -145,13 +135,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello"
+                android:text="Have a nice day, bro!"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
         </LinearLayout>
     </RelativeLayout>
 
-    <!-- Message Input Section -->
     <RelativeLayout
         android:id="@+id/message_input_section"
         android:layout_width="match_parent"
@@ -162,7 +151,6 @@
         android:paddingHorizontal="12dp"
         android:paddingVertical="8dp">
 
-        <!-- Camera Button -->
         <ImageView
             android:id="@+id/camera_button"
             android:layout_width="36dp"
@@ -175,7 +163,6 @@
             android:src="@drawable/ic_camera"
             app:tint="@color/white" />
 
-        <!-- Message Input -->
         <LinearLayout
             android:id="@+id/message_input_container"
             android:layout_width="match_parent"
@@ -198,7 +185,6 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <!-- Input Actions -->
         <LinearLayout
             android:id="@+id/input_actions"
             android:layout_width="wrap_content"
@@ -237,5 +223,4 @@
                 app:tint="@color/black" />
         </LinearLayout>
     </RelativeLayout>
-
 </RelativeLayout>
