@@ -11,11 +11,10 @@ class TitleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_title)
 
-        // Delay for 1 second (1000 milliseconds) before redirecting to LoginActivity
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
-            finish() // Close SplashActivity
+            finish()
         }, 1000)
     }
 }

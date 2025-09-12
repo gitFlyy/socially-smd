@@ -417,7 +417,7 @@
                 android:id="@+id/profileButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ball_big_purple" />
+                android:src="@drawable/ball_big_orange" />
         </LinearLayout>
     </LinearLayout>
 

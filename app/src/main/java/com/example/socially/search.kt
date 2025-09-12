@@ -28,6 +28,13 @@ class search : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val cameraButton = findViewById<ImageView>(R.id.addButton)
+        cameraButton.setOnClickListener {
+            val intent = Intent(this, camera::class.java)
+            startActivity(intent)
+        }
+
+
         val searchIcon = findViewById<ImageView>(R.id.searchIcon)
         searchIcon.setOnClickListener {
             val intent = Intent(this, searchResult::class.java)

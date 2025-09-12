@@ -4,24 +4,22 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class signUp : AppCompatActivity() {
+class conversation : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_conversation)
 
-        val signUpButton = findViewById<Button>(R.id.createAcc)
-
-        signUpButton.setOnClickListener {
-            val intent = Intent(this, switchAccounts::class.java)
+        val backButton = findViewById<ImageView>(R.id.back_button)
+        backButton.setOnClickListener {
+            val intent = Intent(this, directMessages::class.java)
             startActivity(intent)
         }
 
-        val cameraButton = findViewById<ImageView>(R.id.profileImage)
+        val cameraButton = findViewById<ImageView>(R.id.camera_button)
         cameraButton.setOnClickListener {
             val intent = Intent(this, camera::class.java)
             startActivity(intent)

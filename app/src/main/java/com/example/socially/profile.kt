@@ -1,32 +1,19 @@
 package com.example.socially
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class you : AppCompatActivity() {
+class profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activitiy_you)
-
-        val followingButton = findViewById<TextView>(R.id.tab_following)
-        followingButton.setOnClickListener {
-            val intent = Intent(this, notifications::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.activity_profile)
 
         val homeButton = findViewById<ImageView>(R.id.nav_home)
         homeButton.setOnClickListener {
             val intent = Intent(this, home::class.java)
-            startActivity(intent)
-        }
-
-        val cameraButton = findViewById<ImageView>(R.id.nav_add)
-        cameraButton.setOnClickListener {
-            val intent = Intent(this, camera::class.java)
             startActivity(intent)
         }
 
@@ -36,9 +23,21 @@ class you : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val profileButton = findViewById<ImageView>(R.id.nav_profile)
-        profileButton.setOnClickListener {
-            val intent = Intent(this, profile::class.java)
+        val cameraButton = findViewById<ImageView>(R.id.nav_add)
+        cameraButton.setOnClickListener {
+            val intent = Intent(this, camera::class.java)
+            startActivity(intent)
+        }
+
+        val favoritesButton = findViewById<ImageView>(R.id.nav_heart)
+        favoritesButton.setOnClickListener {
+            val intent = Intent(this, notifications::class.java)
+            startActivity(intent)
+        }
+
+        val editProfileButton = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.edit_profile_btn)
+        editProfileButton.setOnClickListener {
+            val intent = Intent(this, editProfile::class.java)
             startActivity(intent)
         }
     }

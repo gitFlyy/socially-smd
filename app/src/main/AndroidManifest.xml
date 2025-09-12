@@ -20,14 +20,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signUp"/>
-        <activity android:name=".Login" />
-        <activity android:name=".switchAccounts" />
-        <activity android:name=".home"/>
+        <activity android:name=".you"/>
+        <activity android:name=".searchResult"/>
         <activity android:name=".search"/>
         <activity android:name=".notifications"/>
-        <activity android:name=".searchResult"/>
-        <activity android:name=".you"/>
+        <activity android:name=".profile"/>
+        <activity android:name=".camera"/>
+        <activity android:name=".story"/>
+        <activity android:name=".directMessages"/>
+        <activity android:name=".home"/>
+        <activity android:name=".conversation"/>
+        <activity android:name=".editProfile"/>
+        <activity android:name=".Login"/>
+        <activity android:name=".signUp"/>
+        <activity android:name=".switchAccounts"/>
     </application>
 
 </manifest>

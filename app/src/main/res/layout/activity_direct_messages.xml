@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <!-- Status Bar Space -->
     <View
         android:id="@+id/status_bar_space"
         android:layout_width="match_parent"
@@ -13,7 +12,6 @@
         android:layout_alignParentTop="true"
         android:background="@color/white" />
 
-    <!-- Header -->
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -22,7 +20,6 @@
         android:background="@color/white"
         android:paddingHorizontal="16dp">
 
-        <!-- Back Button -->
         <ImageView
             android:id="@+id/back_button"
             android:layout_width="24dp"
@@ -33,7 +30,6 @@
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:padding="4dp" />
 
-        <!-- Username with Dropdown -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +55,6 @@
                 android:src="@drawable/ic_dropdown"/>
         </LinearLayout>
 
-        <!-- Add New Message Button -->
         <ImageView
             android:id="@+id/add_message_button"
             android:layout_width="24dp"
@@ -71,7 +66,6 @@
             android:padding="4dp" />
     </RelativeLayout>
 
-    <!-- Search Bar -->
     <LinearLayout
         android:id="@+id/search_section"
         android:layout_width="match_parent"
@@ -101,7 +95,6 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <!-- Messages List -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -114,7 +107,6 @@
             android:orientation="vertical"
             android:paddingHorizontal="16dp">
 
-            <!-- Message Item 1 - joshua_l -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -125,6 +117,7 @@
                 android:paddingVertical="8dp">
 
                 <ImageView
+                    android:id="@+id/joshua_chat"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
                     android:layout_marginEnd="12dp"
@@ -177,7 +170,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Message Item 2 - karenne -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -240,7 +232,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Message Item 3 - martini_rond -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -303,7 +294,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Message Item 4 - andrewww -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -366,7 +356,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Message Item 5 - kiero_d -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -429,7 +418,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Message Item 6 - maxjacobson -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -494,7 +482,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Camera Section -->
     <LinearLayout
         android:id="@+id/camera_section"
         android:layout_width="match_parent"
@@ -507,6 +494,7 @@
         android:paddingVertical="20dp">
 
         <ImageView
+            android:id="@+id/cameraButtonBottom"
             android:layout_width="20dp"
             android:layout_height="14dp"
             android:layout_marginEnd="8dp"
