@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/loginpage"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -104,7 +105,7 @@
         android:layout_below="@id/or"
         android:text="Don't have an account?"
         android:textColor="@color/brownRed"
-        android:layout_marginLeft="107dp"
+        android:layout_marginLeft="100dp"
         android:textSize="15dp"
         android:layout_marginTop="25dp"/>
 
