@@ -35,6 +35,12 @@ class home : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val cameraButton2 = findViewById<ImageView>(R.id.cameraIcon)
+        cameraButton2.setOnClickListener {
+            val intent = Intent(this, camera::class.java)
+            startActivity(intent)
+        }
+
         val headerShareButton = findViewById<ImageView>(R.id.headerShareIcon)
         headerShareButton.setOnClickListener {
             val intent = Intent(this, directMessages::class.java)
